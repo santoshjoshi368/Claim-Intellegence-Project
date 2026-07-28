@@ -1,0 +1,38 @@
+# ── Web framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9      # file uploads
+
+# ── TensorFlow + Serving client
+tensorflow==2.15.0
+tensorflow-serving-api==2.15.0
+grpcio==1.62.1
+
+# ── Computer vision & video
+opencv-python-headless==4.9.0.80
+Pillow==10.3.0
+numpy==1.26.4
+
+# ── OCR (number plate)
+pytesseract==0.3.10
+easyocr==1.7.1               # fallback OCR — better on non-Latin plates
+
+# ── NLP (FNOL text)
+transformers==4.40.0         # BERT tokenizer
+keras-nlp==0.9.3
+
+# ── Database
+sqlalchemy==2.0.29
+aiosqlite==0.20.0            # async SQLite driver
+alembic==1.13.1              # migrations
+
+# ── Fraud / utilities
+imagehash==4.3.1             # perceptual hashing for duplicate detection
+python-jose==3.3.0           # JWT tokens
+passlib[bcrypt]==1.7.4       # password hashing
+httpx==0.27.0                # async HTTP client
+
+# ── Config & validation
+pydantic==2.7.1
+pydantic-settings==2.2.1
+python-dotenv==1.0.1
